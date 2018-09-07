@@ -17,7 +17,7 @@
 <body>
 <!-- 1. Navigation Bar     -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="file:///Users/olgayudina/Documents/GitHub/iudina.github.io/index.html">Latitude</a>
+        <a class="navbar-brand" href="#">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,7 +27,7 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
             <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 50px, 0px); top: 0px; left: 0px; will-change: transform;">
-                <a class="dropdown-item" href="file:///Users/olgayudina/Documents/GitHub/iudina.github.io/WeatherAnalysis(HTML)/index2.1.html">Temperature</a>
+                <a class="dropdown-item" href="#">Temperature</a>
                 <a class="dropdown-item" href="#">Humidity</a>
                 <a class="dropdown-item" href="#">Cloudiness</a>
                 <a class="dropdown-item" href="#">Wind Speed</a>
@@ -48,39 +48,16 @@
 
 <!-- 2. Main body -->
 <div class="jumbotron">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-8">
             <div class="mr-2 ml-2 mb-2 whitebox">
-                <h1>Summary: Latitude vs X.</h1>
+                <h1>Data</h1>
                 <hr class="my-4">
-                <p class="lead"><img class = "pic0" src = "WeatherAnalysis(HTML)\resources\LatitudeVsTemperature.png" alt = "Latitude vs Temperature">
-                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish 
-                this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                <p class="lead">After assembling the dataset, we used Matplotlyb to plot various aspects of weather vs. latitude. Factors we looked at
-                included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visializations
-                reated as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="mr-2 ml-2 mt-2 whitebox">
-                <h2>Visualizations</h2>
-                <hr class="my-4">
-                <div class="clearfix">
-                <div class="img-container">
-                    <img class = "pic1" src = "WeatherAnalysis(HTML)\resources\LatitudeVsTemperature.png" height = 100% width = 100% alt = "Latitude vs Temperature">
+                <p class="text-muted">The following table includes all of data used for plotting during this project.</p>
+                <div class="table" align = "center">
+                    <iframe style="border-style: none;" src="resources\convertcsv.htm" height="900" width=85%></iframe>
                 </div>
-                <div class="img-container">
-                    <img class = "pic2" src = "WeatherAnalysis(HTML)\resources\LatitudeVsCloudiness.png" height = 100% width = 100% alt = "Latitude vs Cloudiness">
-                </div>
-                <div class="img-container">
-                    <img class = "pic3" src = "WeatherAnalysis(HTML)\resources\LatitudeVsHumidity.png" height = 100% width = 100% alt = "Latitude vs Humidity">
-                </div>
-                <div class="img-container">
-                    <img class = "pic4" src = "WeatherAnalysis(HTML)\resources\LatitudeVsWindSpeed.png" height = 100% width = 100% alt = "Latitude vs Wind Speed">
-                </div>
-                </div>
-            </div>
-        </div>
+
+
+                     
     </div>
 </div>
 
@@ -130,6 +107,7 @@
     display: table;
 }
 
+
 @media (max-width: 767px){
     .img-container {
     float: left;
@@ -139,9 +117,12 @@
     .lead {
     font-size: 20px; 
     }
+    .text-muted {
+    font-size: 15px
+    }
 
     h1 {
-    font-size: 45px
+    font-size: 50px
     }
 
     h2 {
