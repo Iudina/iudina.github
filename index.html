@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Visualization dashboard</title>
-<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="WeatherAnalysis(HTML)/reset.css">
 <link rel="stylesheet" href= "https://bootswatch.com/4/materia/bootstrap.min.css">
   
 <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
@@ -17,7 +17,7 @@
 <body>
 <!-- 1. Navigation Bar     -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="file:///Users/olgayudina/Documents/GitHub/iudina.github.io/index.html">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,14 +27,14 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
             <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 50px, 0px); top: 0px; left: 0px; will-change: transform;">
-                <a class="dropdown-item" href="#">Temperature</a>
-                <a class="dropdown-item" href="#">Humidity</a>
-                <a class="dropdown-item" href="#">Cloudiness</a>
-                <a class="dropdown-item" href="#">Wind Speed</a>
+                <a class="dropdown-item" href="WeatherAnalysis(HTML)/index2.1.html">Temperature</a>
+                <a class="dropdown-item" href="WeatherAnalysis(HTML)/index2.2.html">Humidity</a>
+                <a class="dropdown-item" href="WeatherAnalysis(HTML)/index2.3.html">Cloudiness</a>
+                <a class="dropdown-item" href="WeatherAnalysis(HTML)/index2.4.html">Wind Speed</a>
             </div>
         </li> 
         <li class="nav-item">
-            <a class="nav-link" href="#">Comparison</a>
+            <a class="nav-link" href="WeatherAnalysis(HTML)/index3.html">Comparison</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="WeatherAnalysis(HTML)/Index4.html">Data</a>
@@ -67,16 +67,16 @@
                 <hr class="my-4">
                 <div class="clearfix">
                 <div class="img-container">
-                    <img class = "pic1" src = "WeatherAnalysis(HTML)\resources\LatitudeVsTemperature.png" height = 100% width = 100% alt = "Latitude vs Temperature">
+                    <a href="WeatherAnalysis(HTML)/index2.1.html"><img class = "pic1" src = "WeatherAnalysis(HTML)\resources\LatitudeVsTemperature.png" height = 100% width = 100% alt = "Latitude vs Temperature"></a>
                 </div>
                 <div class="img-container">
-                    <img class = "pic2" src = "WeatherAnalysis(HTML)\resources\LatitudeVsCloudiness.png" height = 100% width = 100% alt = "Latitude vs Cloudiness">
+                    <a href="WeatherAnalysis(HTML)/index2.2.html"><img class = "pic2" src = "WeatherAnalysis(HTML)\resources\LatitudeVsHumidity.png" href="WeatherAnalysis(HTML)/index2.2.html" height = 100% width = 100% alt = "Latitude vs Cloudiness"></a>
                 </div>
                 <div class="img-container">
-                    <img class = "pic3" src = "WeatherAnalysis(HTML)\resources\latitudeVsHumidity.png" height = 100% width = 100% alt = "Latitude vs Humidity">
+                    <a href="WeatherAnalysis(HTML)/index2.3.html"><img class = "pic3" src = "WeatherAnalysis(HTML)\resources\latitudeVsCloudiness.png" href="WeatherAnalysis(HTML)/index2.3.html" height = 100% width = 100% alt = "Latitude vs Humidity"></a>
                 </div>
                 <div class="img-container">
-                    <img class = "pic4" src = "WeatherAnalysis(HTML)\resources\LatitudeVsWindSpeed.png" height = 100% width = 100% alt = "Latitude vs Wind Speed">
+                    <a href="WeatherAnalysis(HTML)/index2.4.html"><img class = "pic4" src = "WeatherAnalysis(HTML)\resources\LatitudeVsWindSpeed.png" href="WeatherAnalysis(HTML)/index2.4.html" height = 100% width = 100% alt = "Latitude vs Wind Speed"></a>
                 </div>
                 </div>
             </div>
@@ -85,6 +85,8 @@
 </div>
 
 <!-- Other -->
+<div class="row">.</div>
+<div class="row">.</div>
     <hr class="my-4">
     <footer class="blockquote-footer">Berkley Bootcamp 2018 </footer>
         
@@ -92,16 +94,26 @@
         <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
 
-
+    <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
 
 </body>
-
 
 <style>
 
 .whitebox {
     background-color: whitesmoke;
-    padding: 1cm;
+    padding: 0.8cm;
 }
 
 .navbar-brand {
